@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <AbsoluteLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/button_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="237dp"
+            android:layout_y="56dp"
+            android:text="Показать время"></Button>
+
+        <Button
+            android:id="@+id/button_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="238dp"
+            android:layout_y="5dp"
+            android:text="Показать дату"></Button>
+
+        <Button
+            android:id="@+id/button_SetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="14dp"
+            android:layout_y="87dp"
+            android:text="Ввести имя"></Button>
+
+        <TextView
+            android:id="@+id/textview_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_x="9dp"
+            android:layout_y="64dp"
+            android:text="Твое имя - "></TextView>
+
+        <EditText
+            android:id="@+id/etLName"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_x="4dp"
+            android:layout_y="6dp"></EditText>
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="6dp"
+            android:layout_y="143dp"
+            android:labelFor="@+id/edit_text"
+            android:text="URL" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="50dp"
+            android:layout_y="142dp"
+            android:autofillHints="https://www.google.com/"
+            android:inputType="text"
+            android:minWidth="150dp" />
+
+        <Button
+            android:id="@+id/button_OpenCite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="237dp"
+            android:layout_y="131dp"
+            android:text="Открыть" />
+
+        <Button
+            android:id="@+id/button_Camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="248dp"
+            android:layout_y="196dp"
+            android:text="Camera" />
+
+        <LinearLayout
+            android:id="@+id/linear_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="-2dp"
+            android:layout_y="250dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text_example"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXT"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="133dp"
+            android:layout_y="293dp">
+
+            <Button
+                android:id="@+id/color"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Color" />
+
+            <Button
+                android:id="@+id/align"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Align" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="411dp"
+            android:layout_height="357dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:layout_x="0dp"
+            android:layout_y="368dp"
+            android:contentDescription="Изображение" />
+
+        <Button
+            android:id="@+id/button_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:layout_x="7dp"
+            android:layout_y="191dp"
+            android:text="Изображение" />
+    </AbsoluteLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
